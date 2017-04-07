@@ -1,0 +1,81 @@
+{
+  "project_info": {
+    "project_number": "686080077077",
+    "firebase_url": "https://tour-app-2bc55.firebaseio.com",
+    "project_id": "tour-app-2bc55",
+    "storage_bucket": "tour-app-2bc55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686080077077:android:fd0a8778df11cff1",
+        "android_client_info": {
+          "package_name": "com.example.andres.touristapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686080077077-9sujpcq4gor1qe2ch5cdpntl2jf2kl8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andres.touristapp",
+            "certificate_hash": "4dc2a0178f9338826773e6d95ef13b3445e86fbf"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCodAE5JSHDWAKw9fCh7iG9LyfeDKL3ddA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686080077077:android:741dd1f6dac68383",
+        "android_client_info": {
+          "package_name": "com.example.andres.plazasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686080077077-b2msmpcfgrdrj07dg0biuoqp0eclmvcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andres.plazasapp",
+            "certificate_hash": "4dc2a0178f9338826773e6d95ef13b3445e86fbf"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCodAE5JSHDWAKw9fCh7iG9LyfeDKL3ddA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
