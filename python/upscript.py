@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-9
 
 import nltk, googlemaps
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -11,7 +11,7 @@ def process(arrayFrom, arrayTo, wordArray,index,nextIndex):
         if arrayFrom[index][1] == arrayFrom[nextIndex][1]:
                 for w in range(arrayFrom[index][2], arrayFrom[nextIndex][2]+1):
                         string+= wordArray[arrayFrom[index][1]][w][0]+ ' '
-                        arrayTo.append(string)
+                arrayTo.append(string)
         else:
                 for m in range(arrayFrom[index][2], len(wordArray[arrayFrom[index][1]])):
                         string+= wordArray[arrayFrom[index][1]][m][0]+ ' '
@@ -20,16 +20,16 @@ def process(arrayFrom, arrayTo, wordArray,index,nextIndex):
                         string+= wordArray[arrayFrom[nextIndex][1]][n][0]
                 arrayTo.append(string)
 def wordDif(w1,w2):
-        return w2[3]-w1[3] <= 6
+	return w2[3]-w1[3] <= 6
 
 def lineDif(w1,w2):
-        return w2[1]-w1[1] <= 1
+	return w2[1]-w1[1] <= 1
 
 def lastBatch(position, array):
-        return len(array) - position
+	return len(array) - position
 
 def isLast(word, array):
-        return word == array[-1]
+    return word == array[-1]
 #File Line count function
 def lineCount(file):
         with open(file,encoding = 'utf-8') as g:
@@ -70,14 +70,15 @@ for i in range(len(nnpArray)):
                 if isLast(nnpArray[i],nnpArray):
                         break
                 nextW = i+1
-                while len(nnpArray) - nextW <= 6:
+                while len(nnpArray) > nextW:
                         if wordDif(nnpArray[i],nnpArray[nextW]) and lineDif(nnpArray[i],nnpArray[nextW]):
                                 process(nnpArray,ngramArray,allWords,i,nextW)
                         nextW += 1
-        nextW = i+1
-        while wordDif(nnpArray[i],nnpArray[nextW]) and lineDif(nnpArray[i],nnpArray[nextW]):
-                process(nnpArray,ngramArray,allWords,i,nextW)
-                nextW += 1
+        else:
+        	nextW = i+1
+        	while wordDif(nnpArray[i],nnpArray[nextW]) and lineDif(nnpArray[i],nnpArray[nextW]):
+                	process(nnpArray,ngramArray,allWords,i,nextW)
+                	nextW += 1
 
 #Busqueda de candidatos en google maps
 mapsLocations = []
